@@ -21,6 +21,7 @@ public class Product {
     private String productName;
     @DynamoDBAttribute
     private Integer price;
+    @DynamoDBTyped(DynamoDBMapperFieldModel.DynamoDBAttributeType.BOOL)
     @DynamoDBAttribute
     private Boolean isAvl;
     @DynamoDBAttribute
